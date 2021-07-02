@@ -41,7 +41,7 @@ object Expressions extends App {
   println(aWeirdValue)
 
   // Code Blocks
-  val aCodeBlock = {
+  val aCodeBlock: String = {
     val y: Int = 2
     val z: Int = y + 1
 
@@ -50,4 +50,15 @@ object Expressions extends App {
 
   //  val anotherValue  = z + 1
   // Not within block, fails
+
+  /*
+  Takeaways:
+    - Basic expressions - operators
+    - If in Scala is an expression
+    - Code Blocks in Scala are expressions
+      - the value of the block is the value of the last expression
+    - Expressions vs Instructions
+      - instructions are executed (think Java), expressions are evaluated (Scala)
+      - In Scala, we'll think in terms of expressions
+   */
 }
