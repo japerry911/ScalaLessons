@@ -61,4 +61,21 @@ object Expressions extends App {
       - instructions are executed (think Java), expressions are evaluated (Scala)
       - In Scala, we'll think in terms of expressions
    */
+
+  // Exercises
+
+  // 1. Difference between "hello world" and println("hello world")
+  // - "hello world" - string side effect
+  // - println("hello world") - unit
+
+  // 2. What's value of this Code Block - Boolean
+  val someValue: Boolean = {
+    2 < 3
+  }
+
+  // 3. And this - Int
+  val someOtherValue: Int = {
+    if (someValue) 239 else 986
+    42
+  }
 }
