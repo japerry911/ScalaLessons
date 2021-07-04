@@ -17,6 +17,7 @@ object Recursions extends App {
 
   def anotherFactorial(n: Int): BigInt = {
     // TAIL RECURSION = use recursive call as the last expression
+    // Use @tailrec decorator for compiler hinting I think
     @tailrec
     def factorialHelper(x: Int, accumulator: BigInt): BigInt =
       if (x <= 1) accumulator
